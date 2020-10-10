@@ -1,1 +1,3 @@
 server/MongoDB.txt
+.env
+node_modules/
