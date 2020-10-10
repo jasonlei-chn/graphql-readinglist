@@ -1,5 +1,5 @@
 # Server side
-Node express server provides `GraphQL` ability backed by MongoDB `mLab`.
+Node express server provides `GraphQL` ability backed by [MongoDB Atlas](https://account.mongodb.com/account/login).
 
 To start the server:
 ```
