@@ -2,6 +2,8 @@ const express = require("express");
 const { graphqlHTTP } = require("express-graphql");
 const schema = require("./schema/schema");
 const mongoose = require("mongoose");
+const chalk = require("chalk");
+
 require("dotenv").config();
 
 const app = express();
@@ -13,7 +15,7 @@ const db_uri = `mongodb+srv://${username}:${password}@cluster0.zdiou.mongodb.net
 
 mongoose.connect(db_uri);
 mongoose.connection.once("open", () => {
-  console.log("connected to MongoDB");
+  console.log(chalk.green("[APP] Connected to MongoDB"));
 });
 
 app.use(
@@ -25,5 +27,5 @@ app.use(
 );
 
 app.listen(4000, () => {
-  console.log("now listening for requests on port 4000");
+  console.log(chalk.green("[APP] Now listening for requests on port 4000"));
 });
