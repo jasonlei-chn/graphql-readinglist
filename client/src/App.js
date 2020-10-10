@@ -1,15 +1,17 @@
-import React from "react";
+import React, { Component } from "react";
 
 // components
 import BookList from "./componenets/BookList";
 
-function App() {
-  return (
-    <div id="main">
-      <h1>Jiayi's Reading List</h1>
-      <BookList />
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div id="main">
+        <h1>Jiayi's Reading List</h1>
+        <BookList />
+      </div>
+    );
+  }  
 }
 
 export default App;
