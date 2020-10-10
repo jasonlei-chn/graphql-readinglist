@@ -1,5 +1,7 @@
 # Server side
-Node express server provides `GraphQL` ability backed by [MongoDB Atlas](https://account.mongodb.com/account/login).
+- It is a [Node.js](https://nodejs.org/en/) [Express](https://expressjs.com/) server.
+- It provides [GraphQL](https://graphql.org/) ability by [express-graphql](https://github.com/graphql/express-graphql).
+- It's backed by [MongoDB Atlas](https://account.mongodb.com/account/login).
 
 To start the server:
 ```
