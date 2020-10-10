@@ -4,7 +4,7 @@ This repo is an exercise of [YouTube playlist 'GraphQL Tutorial'](https://www.yo
 
 To install libraries:
 ```
-$ npm install express dotenv chalk
+$ npm install express dotenv chalk @apollo/client graphql
 ```
 
 
