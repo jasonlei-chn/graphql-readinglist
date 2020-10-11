@@ -5,7 +5,6 @@ const GET_BOOKS = gql`
   {
     books {
       name
-      genere
       id
     }
   }
