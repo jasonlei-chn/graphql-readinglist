@@ -72,5 +72,5 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 Dependencies:
 ```
-npm install apollo-boost react-apollo graphql --save
+npm install apollo-boost react-apollo graphql cors --save
 ```
