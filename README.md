@@ -15,14 +15,30 @@ This repo is an exercise of [YouTube playlist 'GraphQL Tutorial'](https://www.yo
 ### Database
 - MongoDB cloud version
 
-### Screenshot
+
+### Usage
+To start the server, in one terminal:
+```
+$ cd server
+$ npm install
+$ npx nodemon app
+```
+GraphiQL is available at
+```
+http://localhost:4000/graphql
+```
+![](https://i.imgur.com/g3NPRSm.png)
+
+
+To start the client, in another terminal:
+```
+$ cd client
+$ npm install
+$ npm start
+```
+React app is available at
+```
+http://localhost:3000/
+```
 ![](https://i.imgur.com/FYyma6B.png)
-
-
-To install libraries:
-```
-$ npm install express dotenv chalk
-```
-
-
 
