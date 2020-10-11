@@ -1,11 +1,11 @@
 import React from "react";
-import BooksQuery from "./BooksQuery";
+import DisplayBooks from "./DisplayBooks";
 
 function BookList() {
   return (
     <div>
       <ul id="book-list">
-        <BooksQuery />
+        <DisplayBooks />
       </ul>
     </div>
   );

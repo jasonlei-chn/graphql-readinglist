@@ -1,18 +1,9 @@
 import React from "react";
-import { gql, useQuery } from "@apollo/client";
+import { useQuery } from "@apollo/client";
+import { GET_BOOKS } from "../queries/queries";
 
-const GET_BOOKS = gql`
-  {
-    books {
-      name
-      id
-    }
-  }
-`;
-
-function BooksQuery() {
+function DisplayBooks() {
   const { loading, error, data } = useQuery(GET_BOOKS);
-  console.log(data);
   if (loading) {
     return <p>Loading...</p>;
   }
@@ -25,4 +16,4 @@ function BooksQuery() {
   });
 }
 
-export default BooksQuery;
+export default DisplayBooks;
