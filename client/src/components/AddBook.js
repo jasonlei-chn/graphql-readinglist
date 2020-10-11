@@ -4,7 +4,7 @@ import { flowRight as compose } from "lodash";
 import {
   getBooksQuery,
   getAuthorsQuery,
-  addABookMutation,
+  addBookMutation,
 } from "../queries/queries";
 
 class AddBook extends Component {
@@ -37,7 +37,7 @@ class AddBook extends Component {
   submitForm(e) {
     e.preventDefault();
     console.log(this.state);
-    this.props.addABookMutation({
+    this.props.addBookMutation({
       variables: {
         name: this.state.name,
         genre: this.state.genre,
@@ -79,5 +79,5 @@ class AddBook extends Component {
 
 export default compose(
   graphql(getAuthorsQuery, { name: "getAuthorsQuery" }),
-  graphql(addABookMutation, { name: "addABookMutation" })
+  graphql(addBookMutation, { name: "addBookMutation" })
 )(AddBook);
