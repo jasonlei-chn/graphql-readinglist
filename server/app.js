@@ -31,4 +31,5 @@ app.use(
 
 app.listen(4000, () => {
   console.log(chalk.green("[APP] Now listening for requests on port 4000"));
+  console.log(chalk.green("[APP] GraphiQL is available at http://localhost:4000/graphql"));
 });

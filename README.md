@@ -47,20 +47,16 @@ http://localhost:4000/graphql
 
 ### Sample Data
 - Open GraphiQL
-- Add some sample authors by executing each of the following mutations:
+- Add some sample authors by executing the following mutation:
 ```
-mutation {
-  addAuthor(name: "Patrick Rothfuss", age: 44) {
+mutation addSampleAuthors {
+  a: addAuthor(name: "Author A", age: 44) {
     id
   }
-}
-mutation {
-  addAuthor(name: "Brandon Sanderson", age: 42) {
+  b: addAuthor(name: "Author B", age: 42) {
     id
   }
-}
-mutation {
-  addAuthor(name: "Terry Pratchett", age: 66) {
+  c: addAuthor(name: "Author C", age: 66) {
     id
   }
 }
