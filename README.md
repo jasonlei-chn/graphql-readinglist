@@ -7,13 +7,16 @@ This repo is an exercise of [YouTube playlist 'GraphQL Tutorial'](https://www.yo
 
 
 ## Client
-- `React` client using `Apollo` for GraphQL ability.
+- `React` app using `Apollo` for GraphQL ability.
 
 ## Server
-- `Node.js` `express` server using `express-graphql` for GraphQL ability.
+- `Node.js` `Express` app using `express-graphql` for GraphQL ability.
 
 ## Database
 - `MongoDB Cloud`
+
+## Project Overview
+![](https://i.imgur.com/M7vjQtf.png)
 
 
 ## Usage
